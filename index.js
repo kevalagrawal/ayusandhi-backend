@@ -23,6 +23,10 @@ mongoose.connection.once("open", () =>
   console.log("✅ Connected to MongoDB")
 );
 
+app.get("/", (req, res) => {
+  res.send("AyuSandhi Terminology API is running");
+});
+
 // Routes
 app.use("/api/v1/terminology", terminologyRoutes);
 
