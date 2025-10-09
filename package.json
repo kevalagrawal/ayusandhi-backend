@@ -12,9 +12,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "axios": "^1.12.2",
+    "cloudinary": "^2.7.0",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "form-data": "^4.0.4",
+    "fs": "^0.0.1-security",
     "mongoose": "^8.18.1",
-    "nodemon": "^3.1.10"
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7"
   }
 }
