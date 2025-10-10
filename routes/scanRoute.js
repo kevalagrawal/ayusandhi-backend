@@ -48,6 +48,6 @@ const upload = multer({
 });
 
 // Route: POST /scan-report
-router.post("/scan-report", verifyClientApiKey, upload.single("file"), handleScanReport);
+router.post("/report", verifyClientApiKey, upload.single("file"), handleScanReport);
 
 module.exports = router;

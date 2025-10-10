@@ -49,7 +49,7 @@ async function handleScanReport(req, res) {
 				}
 			} catch (_err) {
 				// Non-fatal: keep going without codes
-				console.log("Terminology API error:", _err.message || _err);
+				console.log("Terminology API error:", _err);
 			}
 		}
 

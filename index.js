@@ -12,9 +12,9 @@ const scanRoute = require("./routes/scanRoute.js");
 
 // Middleware
 const corsOptions = {
-  origin: "*", // Allow all origins
-  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
-  allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
+  origin: ["*", "http://localhost:5173", "http://127.0.0.1:5174"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 // Ensure uploads directory exists at runtime
@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 });
 app.use("/api/v1/terminology", terminologyRoutes);
 app.use("/api/v2", regenerateRouter);
-app.use("/", scanRoute);
+app.use("/api/v2/scan", scanRoute);
 
 // Health route
 app.get("/health", (_req, res) => {
