@@ -12,7 +12,7 @@ const scanRoute = require("./routes/scanRoute.js");
 
 // Middleware
 const corsOptions = {
-  origin: ["*", "http://localhost:5173", "http://127.0.0.1:5174","https://namaste-zeta.vercel.app/"],
+  origin: ["*", "http://localhost:5173", "http://127.0.0.1:5174","https://namaste-zeta.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
