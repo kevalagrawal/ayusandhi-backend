@@ -45,8 +45,8 @@ async function addCodesToImage(localImagePath, namasteCode, icdCode) {
 				},
 				color: "black",
 				gravity: "south_east",
-				y: 350,
-				x: 480,
+				y: 250,
+				x: 280,
 			},
 			// Second text line below it
 			{
@@ -59,8 +59,8 @@ async function addCodesToImage(localImagePath, namasteCode, icdCode) {
 				},
 				color: "black",
 				gravity: "south_east",
-				y: 310,
-				x: 540,
+				y: 210,
+				x: 340,
 			},
 		],
 	});
