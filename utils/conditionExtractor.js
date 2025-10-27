@@ -2,7 +2,7 @@ function extractCondition(text) {
 	if (!text || typeof text !== "string") return null;
 
 	// 1️⃣ First, check for "Past" condition pattern (like "Past Jwara")
-	const pastMatch = text.match(/Past\s+([A-Za-z\s()]+)/i);
+	const pastMatch = text.match(/Chronic\s+([A-Za-z\s()]+)/i);
 	if (pastMatch && pastMatch[1]) {
 		let condition = pastMatch[1]
 			.split(/[,(\r?\n;]/)[0] // stop at '(' or ',' or newline
